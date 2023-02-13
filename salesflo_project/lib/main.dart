@@ -6,8 +6,10 @@ import 'package:salesflo_project/posts_cubit/cubit/posts_cubit.dart';
 import 'package:salesflo_project/posts_cubit/views/posts_views.dart';
 import 'package:salesflo_project/settings_cubit/cubit/setting_cubit.dart';
 import 'package:salesflo_project/settings_cubit/cubit/setting_state.dart';
+import 'package:salesflo_project/dio/data/di/service_locator.dart';
 
 void main() {
+  setup();
   runApp(const MyApp());
 }
 

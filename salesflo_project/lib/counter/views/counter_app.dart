@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:salesflo_project/counter/bloc/counter_bloc.dart';
 import 'package:salesflo_project/posts_cubit/views/posts_views.dart';
 import 'package:salesflo_project/settings_cubit/views/setting_page.dart';
+import 'package:salesflo_project/ui/list_users.dart';
 
 import '../../components/drawer.dart';
 
@@ -41,11 +42,11 @@ class _CounterAppState extends State<CounterApp> {
             },
             title: 'View all Posts',
             icon: Icons.circle_outlined),
-            ListTileItem(
+             ListTileItem(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => const PostsView()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => ShowUsers()));
             },
-            title: 'CRUD using dio',
+            title: 'Show Users',
             icon: Icons.circle_outlined),
 
         ]),
